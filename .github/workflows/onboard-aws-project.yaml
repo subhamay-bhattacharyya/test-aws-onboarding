@@ -1,14 +1,7 @@
-name: Onboard AWS Project
+name: Setup Repository
 
 on:
-  workflow_call:
-    secrets:
-      TFE_TOKEN:
-        required: true
-      TF_VCS_OAUTH_TOKEN_ID:
-        required: true
-      GITHUB_PAT:
-        required: true
+  workflow_dispatch:
 
 jobs:
   onboard:
