@@ -1,12 +1,14 @@
 name: Onboard AWS Project
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - '.project/environments.yaml'
-      - '.github/workflows/onboard-aws-project.yaml'
-  workflow_dispatch:
+  workflow_call:
+    secrets:
+      TFE_TOKEN:
+        required: true
+      TF_VCS_OAUTH_TOKEN_ID:
+        required: true
+      GITHUB_PAT:
+        required: true
 
 jobs:
   onboard:
