@@ -8,5 +8,5 @@ jobs:
     uses: subhamay-bhattacharyya-gha/aws-project-onboarding/.github/workflows/aws-project-onboarding.yaml@feature/GHA-0003-feat-make-link-vcs-step-o
     secrets:
       TFE_TOKEN: ${{ secrets.TFE_TOKEN_AWS_ORG }}
-      TF_VCS_OAUTH_TOKEN_ID: ${{ secrets.TF_VCS_OAUTH_TOKEN_ID }}
+      TF_VCS_OAUTH_TOKEN_ID: ${{ secrets.TF_VCS_OAUTH_TOKEN_ID_AWS_ORG }}
       GITHUB_PAT: ${{ secrets.GH_PAT }}
