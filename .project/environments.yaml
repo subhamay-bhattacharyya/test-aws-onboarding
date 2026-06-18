@@ -1,6 +1,6 @@
 hcp:
   # HCP Terraform workspace settings
-  hcp_org: subhamay-snowflake-projects
+  hcp_org: subhamay-aws-projects
   terraform_version: "~>1.14.0"
   execution_mode: remote
   working_directory: infra/platform/tf/
