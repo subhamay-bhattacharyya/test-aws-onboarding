@@ -1,0 +1,14 @@
+name: Onboard AWS Project
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.project/environments.yaml'
+      - '.github/workflows/onboard-aws-project.yaml'
+  workflow_dispatch:
+
+jobs:
+  onboard:
+    uses: subhamay-bhattacharyya-gha/aws-project-onboarding/.github/workflows/aws-project-onboarding.yaml@feature/GHA-0003-feat-make-link-vcs-step-o
+    secrets: inherit
